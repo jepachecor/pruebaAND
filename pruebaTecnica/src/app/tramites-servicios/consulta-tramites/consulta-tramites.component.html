@@ -1,0 +1,62 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row mb-4 justify-row-responsive">
+      <div class="col-12 col-sm-12 col-md-12">
+        <p class="aviso-ciiu">
+          La información de códigos CIIU está siendo cargada de manera gradual por
+          lo que estará disponible inicialmente para los municipios que se vengan incorporando.
+        </p>
+      </div>
+      <form [formGroup]="dataForm" #nativeRefForm>
+        <div class="row mb-2 justify-row-responsive mb-5">
+          <div class="col-xs-12 col-md-3">
+            <div class="form-group select-govco select-gov">
+              <label>Departamento</label>
+              <select
+              id="depCodigo"
+              [(ngModel)]= "depCodigo"
+              [formControlName]="'depCodigo'"
+              (change)="getMunicipios()"
+              class="form-select">
+                <option *ngFor="let departamento of listaDeDepartamentos" [ngValue]="departamento.depCodigo">
+                  {{departamento.depNombre}}
+              </option>
+              </select>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="form-group select-govco select-gov">
+              <label>Municipio</label>
+              <select
+              id="munCodigo"
+              [formControlName]="'munCodigo'"
+              (change)="getActividades()"
+              class="form-select">
+                <option  *ngFor="let municipio of listaDeMunicipios" [value]="municipio.munCodigo">
+                  {{municipio.munNombre}}
+                  </option>
+              </select>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 d-flex">
+            <div class="col-md-10">
+              <div class="form-group select-govco select-gov">
+                <label>Buscar actividad económica</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option  *ngFor="let actividad of listaDeActividades" [value]="actividad.codigo">
+                    {{actividad.actividad}}
+                    </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex">
+              <button class="btn-search align-self-end">
+                <span class="govco-icon govco-icon-search-cn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="table-simple-headblue-govco">
+      <table class="table display table-responsive-sm table-responsive-md" style="width:100%">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nombre de la actividad</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let actividad of listaDeActividades">
+            <td>{{ actividad.codigo }}</td>
+            <td>{{ actividad.actividad }}</td>
+            <td> <p><a href="#" >VER NOTA</a></p></td>
+            <td> <p><a href="#" >VER TRÁMITES</a></p></td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
