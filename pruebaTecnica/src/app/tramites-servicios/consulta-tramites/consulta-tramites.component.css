@@ -1,0 +1,27 @@
+.container{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.aviso-ciiu {
+  border: 1px solid rgb(170, 35, 35);
+  border-radius: 36px;
+  opacity: 1;
+  text-align: center;
+  font-size: 14px!important;
+  font-weight: 400!important;
+  font-family: "Work Sans"!important;
+  letter-spacing: 0;
+  color: rgb(170, 35, 35);
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.btn-search{
+  background: transparent;
+  border-color: transparent;
+}
+
+span.govco-icon{
+  font-size: 3rem;
+}

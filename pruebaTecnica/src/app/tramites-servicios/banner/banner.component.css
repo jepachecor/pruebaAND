@@ -1,0 +1,19 @@
+.banner{
+  background: #004884;
+  padding-top: 6em;
+  height: 333px;
+}
+
+.container{
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container h1{
+  color: white;
+}
+
+.container p{
+  color: white;
+}
