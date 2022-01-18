@@ -1,0 +1,37 @@
+footer {
+  padding-bottom: 0px;
+    padding-top: 0px;
+}
+.footer-text {
+  color: white;
+}
+
+.social-footer{
+  height: 50px;
+}
+
+a.footer-text {
+  height: 100%;
+  line-height: 50px;
+}
+
+i.footer-icon {
+  height: 100%;
+  line-height: 50px;
+}
+
+.footer-icon {
+  color: white;
+}
+
+hr{
+  color: white;
+}
+
+.co-icon{
+  width: 10%;
+}
+
+.gov-icon{
+  width: 40%;
+}
